@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename)
 const app = express()
 const PORT = 5000
 
-app.use(express.static(path.join(__dirname, "dist")))
+app.use(express.static(path.join(__dirname, "build")))
 
 app.get("/sneha", (req, res) => {
     try {
@@ -22,7 +22,7 @@ app.get("/sneha", (req, res) => {
 
 
 app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "dist", "index.html"))
+    res.sendFile(path.join(__dirname, "build", "index.html"))
 })
 
 app.listen(PORT, () => {
