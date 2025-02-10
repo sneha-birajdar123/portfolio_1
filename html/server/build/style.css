@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.h1{
+    font-size: x-large;
+    color: blueviolet;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
